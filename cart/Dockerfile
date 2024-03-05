@@ -4,8 +4,6 @@ EXPOSE 8080
 
 WORKDIR /opt/server
 
-ENV MONGO=true
-
 COPY package.json /opt/server/
 
 RUN npm install
