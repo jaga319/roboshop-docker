@@ -19,7 +19,7 @@ services:
     depends_on:
     - catalogue
   redis:
-
+    image: redis
   user:
     image: user:1.0.0
     depends_on:
