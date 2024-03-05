@@ -12,10 +12,10 @@ services:
     image:  catalogue:1.0.0
     depends_on:
     - mongodb
-
   web:
     image: web:1.0.0
     ports:
     - "80:80"
     depends_on:
     - catalogue
+  redis:
