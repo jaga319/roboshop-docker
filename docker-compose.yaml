@@ -49,8 +49,8 @@ services:
     depends_on:
     - mysql
   rabbitmq:
-    image: rabbitmq:1.0.0
     container_name: rabbitmq
+    image: rabbitmq
     environment:
     - RABBITMQ_DEFAULT_USER=roboshop
     - RABBITMQ_DEFAULT_PASS=roboshop123
