@@ -22,8 +22,8 @@ services:
     depends_on:
     - catalogue
     - user
-    - shipping
     - cart
+    - shipping
     - payment
   redis:
     image: redis
