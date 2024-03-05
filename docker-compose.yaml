@@ -49,11 +49,11 @@ services:
     depends_on:
     - mysql
   rabbitmq:
-    container_name: rabbitmq
     image: rabbitmq:1.0.0
+    container_name: rabbitmq
     environment:
     - RABBITMQ_DEFAULT_USER=roboshop
-    - RABBITMQ_DEFAULT_PASSWORD=roboshop123
+    - RABBITMQ_DEFAULT_PASS=roboshop123
   payment:
     image: payment:1.0.0
     container_name: payment
