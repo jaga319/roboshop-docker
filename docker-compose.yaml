@@ -2,6 +2,10 @@ networks:
   default:
     external:
       name: roboshop
+volumes:
+  mongodb:
+  catalogue:
+  web:
 services:
   # docker run -d --name mongodb --network=roboshop mongodb:1.0.0
   mongodb:
@@ -9,6 +13,11 @@ services:
     container_name: mongodb
       # networks:
       # - roboshop
+    volumes:
+      - source: mongodb
+        target: /data/db
+        type: volume
+
   catalogue:
     image:  catalogue:1.0.0
     container_name: catalogue

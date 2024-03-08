@@ -1,4 +1,4 @@
-FROM node:18
+FROM node:hydrogen-alpine3.18
 
 EXPOSE 8080
 
